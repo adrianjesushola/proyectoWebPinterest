@@ -48,9 +48,11 @@
 </html>
 
 <script>
+    window.resizeTo(window.screen.width, window.screen.height);
     document.getElementById("favD").style.visibility='hidden';
 
     function mostrarMios(){
+        window.resizeTo(window.screen.width, window.screen.height);
         document.getElementById("misPD").style.visibility = 'visible';
         document.getElementById("favD").style.visibility =  'hidden';
        cambiarmio();
@@ -58,6 +60,7 @@
     }
 
     function mostrarGuardados(){
+        window.resizeTo(window.screen.width, window.screen.height);
         document.getElementById("favD").style.visibility = 'visible';
         document.getElementById("misPD").style.visibility = 'hidden';
         cambiarGuardados();
