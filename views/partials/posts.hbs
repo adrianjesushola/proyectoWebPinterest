@@ -3,15 +3,8 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
 <script src="/path/to/masonry.pkgd.min.js"></script>
-<script>
-    var $grid = $('.grid').imagesLoaded( function() {
-        // init Masonry after all images have loaded
-        $grid.masonry({
-            "itemSelector": ".grid-item", "percentPosition": true
-        });
-    });
-</script>
-<div class="grid" >
+
+<div class="grid" data-masonry='{ "itemSelector": ".grid-item"}'>
     {{#each posts}}
         <div class="grid-item">
             <div class="row">
