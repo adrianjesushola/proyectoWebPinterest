@@ -19,7 +19,7 @@
     function delay(time) {
         return new Promise(resolve => setTimeout(resolve, time));
     }
-    delay(1000).then(() => window.dispatchEvent(new Event('resize')));
+    delay(200).then(() => window.dispatchEvent(new Event('resize')));
     document.getElementById("misPD").style.visibility = 'visible';
     window.resizeTo(window.screen.width, window.screen.height);
     function readURL(input) {

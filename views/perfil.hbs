@@ -48,6 +48,10 @@
 </html>
 
 <script>
+    function delay(time) {
+        return new Promise(resolve => setTimeout(resolve, time));
+    }
+    delay(200).then(() => window.dispatchEvent(new Event('resize')));
     window.resizeTo(window.screen.width, window.screen.height);
     document.getElementById("favD").style.visibility='hidden';
 
