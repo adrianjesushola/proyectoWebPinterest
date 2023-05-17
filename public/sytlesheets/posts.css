@@ -8,6 +8,7 @@
     -moz-box-shadow: 5px 6px 15px 5px rgba(0,0,0,0.41);
     box-shadow: 5px 6px 15px 5px rgba(0,0,0,0.41);
     margin-bottom: 15px;
+    display: block;
 }
 .grid-item:hover {
     width: 19.4%;
