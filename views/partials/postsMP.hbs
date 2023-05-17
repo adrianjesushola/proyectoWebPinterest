@@ -11,12 +11,12 @@
 </script>
 <div class="grid" data-masonry='{ "itemSelector": ".grid-item"}'>
     {{#each posts}}
-    <form action="http://localhost:8080/editarImagen" method="POST" id="formoculto{{this.id}}">
+    <form action="https://proyectowebpinterest-production.up.railway.app/editarImagen" method="POST" id="formoculto{{this.id}}">
         <input type="hidden" id="var1" name="userId" value="{{this.userId}}"/>
         <input type="hidden" id="var2" name="postID" value="{{this.id}}"/>
         <div class="grid-item" onclick="irEditar({{this.id}})">
             <p class="desc">{{this.Descripcion}}</p>
-            <img src="http://localhost:8080/photo/{{this.id}}" alt="your image" class="imagenPost"/>
+            <img src="https://proyectowebpinterest-production.up.railway.app/photo/{{this.id}}" alt="your image" class="imagenPost"/>
         </div>
     </form>
     {{/each}}
