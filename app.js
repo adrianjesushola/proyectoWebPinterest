@@ -69,7 +69,9 @@ app.post('/Miperfil', async function (req, res) {
     cdx ={usuario: us, posts: publicaciones, postsL: pubsLiked, username:usuario.usuario}
     res.render('perfil',cdx);
 })
-
+app.get('/', function (req, res) {
+    res.redirect('/login');
+})
 app.get('/login', function (req, res) {
     res.render('login');
 })
