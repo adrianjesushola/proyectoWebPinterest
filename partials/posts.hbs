@@ -1,0 +1,70 @@
+<head>
+    <link href="sytlesheets/posts.css" rel="stylesheet">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+<script src="/path/to/masonry.pkgd.min.js"></script>
+<div class="grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+    {{#each posts}}
+        <div class="grid-item">
+            <div class="row">
+                <div class="col-6">
+                    <p class="titulo">{{this.username}}</p>
+                    <p class="desc">{{this.Descripcion}}</p>
+                </div>
+                <div class="col-6">
+                    {{#if this.liked}}
+                        <form action="javascript:;" onsubmit="favorito({{this.id}},{{usuario}});" >
+                            <input id='likeB{{this.id}}' type="submit" value="unlike" class="btnDLike posCorazon">
+                        </form>
+                    {{/if}}
+                    {{#unless this.liked}}
+                        <form action="javascript:;" onsubmit="favorito({{this.id}},{{usuario}});" >
+                            <input id='likeB{{this.id}}' type="submit" value="like" class="btnLike posCorazon">
+                        </form>
+                    {{/unless}}
+                </div>
+            </div>
+
+            <img src="http://localhost:8080/photo/{{this.id}}" alt="your image" class="imagenPost"/>
+        </div>
+    {{/each}}
+</div>
+<style>
+    .btnDLike {
+        background: url("icons/heartSelected.png");
+        background-size: cover;
+        font-size: 0;
+        border: 0;
+        display: block;
+        height: 34px;
+        width: 34px;
+    }
+    .btnDLike:hover{
+        background: url("icons/heart.png");
+        background-size: cover;
+        font-size: 0;
+        border: 0;
+        display: block;
+        height: 34px;
+        width: 34px;
+    }
+    .btnLike {
+        background: url("icons/heart.png");
+        background-size: cover;
+        font-size: 0;
+        border: 0;
+        display: block;
+        height: 34px;
+        width: 34px;
+    }
+    .btnLike:hover{
+        background: url("icons/heartSelected.png");
+        background-size: cover;
+        font-size: 0;
+        border: 0;
+        display: block;
+        height: 34px;
+        width: 34px;
+    }
+</style>
+

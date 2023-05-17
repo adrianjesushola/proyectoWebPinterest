@@ -1,0 +1,108 @@
+.contenido {
+    background-color: #272727;
+    margin-top: 100px;
+    border-radius: 25px;
+    height: 90%;
+    padding: 20px;
+    box-shadow: 7px 6px 27px 8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 6px 27px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 6px 27px 8px rgba(0,0,0,0.75);
+}
+.btnCF {
+    background: url("../icons/cloud.png");
+    background-size: cover;
+    font-size: 0;
+    border: 0;
+    display: block;
+    height: 34px;
+    width: 34px;
+    margin: auto;
+}
+
+.btnB {
+    background: url("../icons/trash.png");
+    background-size: cover;
+    font-size: 0;
+    border: 0;
+    display: block;
+    height: 34px;
+    width: 34px;
+    float: right;
+}
+.btnB:hover {
+    background: url("../icons/trashSelected.png");
+    background-size: cover;
+    font-size: 0;
+    border: 0;
+    display: block;
+    height: 34px;
+    width: 34px;
+    float: right;
+}
+
+.cosasarriba {
+    margin-top: 5%;
+}
+
+.imagen {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    object-fit: cover;
+    box-shadow: 6px 2px 22px 8px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 6px 2px 22px 8px rgba(0,0,0,0.43);
+    -moz-box-shadow: 6px 2px 22px 8px rgba(0,0,0,0.43);
+}
+.descr {
+    width: 80%;
+    display: block;
+    margin-left: 10%;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding-left: 10px;
+    border: none;
+    height: 40px;
+    color: #f1f1f1;
+    background-color: #0f0f0f;
+    box-shadow: 7px 6px 27px 8px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 7px 6px 27px 8px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 7px 6px 27px 8px rgba(0,0,0,0.75) inset;
+ }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #f1f1f1;
+    opacity: 1; /* Firefox */
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #f1f1f1;
+}
+
+.publicar {
+    border: 0;
+    background: none;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+    padding: 5px 15px ;
+    text-align: center;
+    border: 2px solid;
+    border: 2px solid #7f00b2;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 0;
+    background: #7f00b2;
+    cursor: pointer;
+    border: 2px solid #7f00b2;
+}
+
+.publicar:hover {
+    background: none;
+    transform: translatey(3px);
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}

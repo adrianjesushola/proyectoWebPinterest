@@ -1,0 +1,118 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+li {
+    display: inline-block;
+}
+
+.liExit {
+    float: right;
+}
+.barraD {
+    width: 10%;
+}
+.main-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+li form {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.espacioInicio {
+    height: 60px;
+}
+
+.btnHome {
+    background: url("../icons/home.png");
+    background-size: cover;
+    font-size: 0;
+    border: 0;
+    display: block;
+    height: 34px;
+    width: 34px;
+}
+
+.btnHome:hover{
+    background: url("../icons/homeSelected.png");
+    background-size: cover;
+    font-size: 0;
+    border: 0;
+    display: block;
+    height: 34px;
+    width: 34px;
+}
+
+.btnSubirFoto {
+    background: url("../icons/add.png");
+    background-size: cover;
+    font-size: 0;
+    border: 0;
+    display: block;
+    height: 36px;
+    width: 36px;
+}
+
+.btnSubirFoto:hover{
+    background: url("../icons/addSelected.png");
+    background-size: cover;
+    font-size: 0;
+    border: 0;
+    display: block;
+    height: 36px;
+    width: 36px;
+}
+
+.btnPerfil {
+    background: url("../icons/user.png");
+    background-size: cover;
+    font-size: 0;
+    border: 0;
+    display: block;
+    height: 34px;
+    width: 34px;
+}
+
+.btnPerfil:hover{
+    background: url("../icons/userSelected.png");
+    background-size: cover;
+    font-size: 0;
+    border: 0;
+    display: block;
+    height: 34px;
+    width: 34px;
+}
+
+.btnExit {
+    background: url("../icons/exit.png");
+    background-size: cover;
+    font-size: 0;
+    border: 0;
+    display: block;
+    height: 34px;
+    width: 34px;
+}
+
+.btnExit:hover{
+    background: url("../icons/exitSelected.png");
+    background-size: cover;
+    font-size: 0;
+    border: 0;
+    display: block;
+    height: 34px;
+    width: 34px;
+}
