@@ -10,7 +10,7 @@ const PORT = process.env.PORT;
 hbs.registerPartials(__dirname+'/views/partials');
 
 app.set('view engine', 'hbs');
-app.use(express.static(__dirname + '../public'));
+app.use(express.static(__dirname + '/public'));
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(fileUpload());
@@ -50,7 +50,7 @@ app.post('/inicio', async function (req, res) {
     }
     publicaciones.reverse();
     cdx ={usuario: us, posts: publicaciones}
-    res.render('todasLasImagenes',cdx);
+    res.render('todaslasImagenes',cdx);
 })
 
 app.post('/Miperfil', async function (req, res) {
