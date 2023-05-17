@@ -9,19 +9,19 @@
         <div class="col-sm-4">
             <div class="main-container">
                 <li>
-                    <form action="https://proyectowebpinterest-production.up.railway.app/inicio" method="POST" id="formoculto">
+                    <form action="http://localhost:8080/inicio" method="POST" id="formoculto">
                         <input type="hidden" id="var1" name="userId" value="{{usuario}}"/>
                         <input type="submit" value='a' class="btnHome">
                     </form>
                 </li>
                 <li>
-                    <form action="https://proyectowebpinterest-production.up.railway.app/nuevaPubli" method="POST" id="formoculto">
+                    <form action="http://localhost:8080/nuevaPubli" method="POST" id="formoculto">
                         <input type="hidden" id="var1" name="userId" value="{{usuario}}"/>
                         <input type="submit" value="subir foto" class="btnSubirFoto">
                     </form>
                 </li>
                 <li>
-                    <form action="https://proyectowebpinterest-production.up.railway.app/Miperfil" method="POST" id="formoculto">
+                    <form action="http://localhost:8080/Miperfil" method="POST" id="formoculto">
                         <input type="hidden" id="var1" name="userId" value="{{usuario}}"/>
                         <input type="submit" value="IrPerfil" class="btnPerfil">
                     </form>
@@ -30,7 +30,7 @@
         </div>
         <div class="col-sm-4">
             <li class="liExit">
-                <form action="https://proyectowebpinterest-production.up.railway.app/login" method="GET" id="formoculto">
+                <form action="http://localhost:8080/login" method="GET" id="formoculto">
                     <input type="hidden" id="var1" name="userId" value="{{usuario}}"/>
                     <input type="submit" value="cerrar Sesion" class="btnExit">
                 </form>
