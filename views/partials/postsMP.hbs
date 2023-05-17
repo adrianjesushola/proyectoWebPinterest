@@ -9,7 +9,7 @@
         iE.submit();
     }
 </script>
-<div class="grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "percentPosition": true}'>
     {{#each posts}}
     <form action="https://proyectowebpinterest-production.up.railway.app/editarImagen" method="POST" id="formoculto{{this.id}}">
         <input type="hidden" id="var1" name="userId" value="{{this.userId}}"/>
