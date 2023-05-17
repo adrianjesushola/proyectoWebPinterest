@@ -32,7 +32,7 @@
     async function favorito(id,usuario){
         const likebtn = document.getElementById('likeB'+id);
         let caca;
-        await fetch('http://localhost:8080/favorito', {
+        await fetch('https://proyectowebpinterest-production.up.railway.app/favorito', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

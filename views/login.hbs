@@ -41,7 +41,7 @@
             Ya tienes una cuenta? <a class="form_link" href="#" id="linkLogin">Inicia sesion</a></p>
     </form>
 </div>
-<form style="display: none" action="http://localhost:8080/inicio" method="POST" id="formoculto">
+<form style="display: none" action="https://proyectowebpinterest-production.up.railway.app/inicio" method="POST" id="formoculto">
     <input type="hidden" id="var1" name="userId" value=""/>
 </form>
 </body>
@@ -55,7 +55,7 @@
         const password=document.getElementById('password').value;
         const mensaje = document.getElementById('mensaje');
         let caca;
-        await fetch('http://localhost:8080/registrar', {
+        await fetch('https://proyectowebpinterest-production.up.railway.app/registrar', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -81,7 +81,7 @@
         const formO = document.getElementById('formoculto');
         const ide = document.getElementById('var1');
         let caca;
-        await fetch('http://localhost:8080/iniciarSesion', {
+        await fetch('https://proyectowebpinterest-production.up.railway.app//iniciarSesion', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
