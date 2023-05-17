@@ -33,6 +33,7 @@ app.post('/nuevaPubli',  function (req, res) {
 app.post('/inicio', async function (req, res) {
     const us = req.body.userId
     const publicaciones = await knex('post');
+    console.log(publicaciones)
     const likes = await knex('likes').where({usuario:us});
     for (const pub in publicaciones){
         let liked = false;
@@ -42,8 +43,9 @@ app.post('/inicio', async function (req, res) {
                 break;
             }
         }
+        console.log(publicaciones[pub])
         publicaciones[pub]['liked']=liked;
-        const usuario = await knex('usuarios').where({id:us}).first();
+        const usuario = await knex('usuarios').where({id:publicaciones[pub].userId}).first();
         publicaciones[pub]['username']=usuario.usuario;
     }
     publicaciones.reverse();
